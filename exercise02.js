@@ -8,3 +8,13 @@
 
 // Input:8
 // Output:40320
+
+let firstFactorial = num => {
+    let factorial = 1;
+    for(let i = num; num > 0; num--){
+        factorial *= num
+    }
+    return factorial;
+}
+
+console.log(firstFactorial(8));
