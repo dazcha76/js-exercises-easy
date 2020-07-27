@@ -8,3 +8,17 @@
 
 // Input:"I love dogs"
 // Output:"love"
+
+function longestWord(str){
+    let longestWord = '';
+    let words = str.split(' ');
+    for(let word of words){
+        let cleanWord = word.replace(/[^a-zA-Z]/gm, '')
+        if(cleanWord.length > longestWord.length){
+            longestWord = cleanWord
+        }
+    }
+    return longestWord
+}
+
+console.log(longestWord("fun&!! time"))
